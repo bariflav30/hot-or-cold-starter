@@ -45,7 +45,17 @@ function playGame(){
 	}
 	if (howClose===0){
 		$('#feedback').text('You guessed it!');
+		$('#userGuess').prop("disabled",true);
 	}
+
+	$('#guessList').append('<li>' + guess); //equavalient to <li>+guess+<li>
+
+	var countGuess=$('#guessList').children().length;
+	$('#count').text(countGuess);
+
+	$('#userGuess').val("");
+
+}// end of playGame function code
 
 
 
