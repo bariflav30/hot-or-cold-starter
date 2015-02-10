@@ -57,6 +57,15 @@ function playGame(){
 
 }// end of playGame function code
 
+function newGame(){
+	$('#feedback').text('Make your Guess!');
+	$('#count').text('0');
+	$('#userGuess').val("");
+	$('#guessList').children('li').remove();
+	Math.floor(Math.random()*100 + 1);
+	$("#userGuess").prop("disabled",false );
+}
+
 
 
 
