@@ -35,13 +35,16 @@ function playGame(){
 		$('#feedback').text('You are ice cold');
 	}
 	if ((howClose<=49) && (howClose>=30)){
-		$('#feedback').text('You are cold')
+		$('#feedback').text('You are cold');
 	}
 	if ((howClose<=29) && (howClose>=10)){
-		$('#feedback').text('You are warm')
+		$('#feedback').text('You are warm');
 	}
 	if ((howClose<=9) && (howClose>=1)){
-		$('#feedback').text('You are hot')
+		$('#feedback').text('You are hot');
+	}
+	if (howClose===0){
+		$('#feedback').text('You guessed it!');
 	}
 
 
