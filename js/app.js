@@ -12,6 +12,12 @@ $(document).ready(function(){
   		$(".overlay").fadeOut(1000);
   	});
 
-});
+  	/*---My Code---*/
+
+  	$('#guessButton').click(function(){
+  		newGame();
+  	});
+}); //document end here
+
 
 
